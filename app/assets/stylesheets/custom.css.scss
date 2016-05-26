@@ -1,0 +1,143 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$alice-blue: #f2f4ff;
+$columbia-blue: #a9d3ff;
+$baby-blue: #96c5f7;
+$botticelli: #93acb5;
+$sirocco: #6c756b;
+$charcoal: #3f3f3f;
+
+/* universal */
+
+body {
+  padding-top: 40px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* footer */
+
+footer {
+    display: none;
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+/* REAL CUSTOM STYLES */
+
+.topnav {
+    background-color: $alice-blue;
+    height: 3.2em;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 2.1em;
+  color: $sirocco;
+  padding-top: 3px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  font-family: Lobster, serif;
+    &:hover {
+      color: $botticelli;
+      text-decoration: none;
+    }
+}
+
+.navlink {
+    color: $sirocco;
+    font-family: Hind, sans-serif;
+    font-weight: 300;
+    padding-top: 7px;
+}
+
+.page {
+    height: 911px;
+    width: 100%;
+    background-color: $charcoal;
+}
+
+.page-north {
+    text-align: center;
+}
+
+#mainlogo {
+    margin-top: 225px;
+    font-family: Lobster, serif;
+    font-size: 7em;
+    color: $alice-blue;
+}
+
+.page-south {
+    text-align: center;
+}
+
