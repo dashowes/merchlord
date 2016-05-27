@@ -10,6 +10,8 @@ $botticelli: #93acb5;
 $sirocco: #6c756b;
 $charcoal: #3f3f3f;
 $zircon: #e0e0e0;
+$aquamarine: #7cffc4;
+$shuttle-gray: #5e6973;
 
 /* universal */
 
@@ -126,7 +128,7 @@ footer ul li {
 }
 
 .page {
-    height: 911px;
+    height: 1260px;
     width: 100%;
     background-color: $charcoal;
 }
@@ -187,11 +189,15 @@ footer ul li {
     margin-bottom: 9px;
 }
 
+.browsebuttons-big {
+    margin-left: -20px;
+}
+
 .actionbutton-small {
     text-align: center;
     color: $zircon;
     border: 1.85px solid $zircon;
-    width: 85%;
+    width: 95%;
     height: 45px;
     &:hover {
         background-color: $zircon;
@@ -203,6 +209,31 @@ footer ul li {
         font-weight: 300;
         font-size: 1.15em;
         padding-top: 5px;
+        text-transform: uppercase;
+    }
+}
+
+.categories-big {
+    margin-top: 7px;
+    margin-left: -30px;
+}
+
+.category-big {
+    text-align: center;
+    color: $aquamarine;
+    border: 1.75px solid $aquamarine;
+    width: 92%;
+    height: 43%;
+    &:hover {
+        background-color: $aquamarine;
+        color: $shuttle-gray;
+        cursor: pointer;
+    }
+    h5 {
+        font-family: Hind, sans-serif;
+        font-weight: 300;
+        font-size: 1.11em;
+        padding-top: 4.75px;
         text-transform: uppercase;
     }
 }

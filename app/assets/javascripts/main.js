@@ -21,4 +21,8 @@ $(function() {
 	$('#browsebutton').click(function() {
 	    $('.browsebuttons-big').slideToggle('slow');
 	});
+	
+	$('#categoriesbutton').click(function() {
+	    $('.categories-big').slideToggle('slow');
+	});
 });
