@@ -9,6 +9,7 @@ $baby-blue: #96c5f7;
 $botticelli: #93acb5;
 $sirocco: #6c756b;
 $charcoal: #3f3f3f;
+$zircon: #e0e0e0;
 
 /* universal */
 
@@ -30,6 +31,10 @@ textarea {
 
 .center h1 {
   margin-bottom: 10px;
+}
+
+li {
+    list-style: none;
 }
 
 /* typography */
@@ -131,13 +136,82 @@ footer ul li {
 }
 
 #mainlogo {
-    margin-top: 225px;
+    margin-top: 165px;
     font-family: Lobster, serif;
     font-size: 7em;
-    color: $alice-blue;
+    color: $botticelli;
+    
+    &:hover {
+        color: $alice-blue;
+        cursor: pointer;
+    }
+}
+
+.about {
+    margin-top: -23px;
+    margin-bottom: 33px;
+    p {
+        font-family: Hind, sans-serif;
+        font-weight: 300;
+        font-size: 1.15em;
+        color: $alice-blue;
+    }
 }
 
 .page-south {
+    margin-top: -23px;
     text-align: center;
 }
 
+.actionbutton {
+    text-align: center;
+    color: $columbia-blue;
+    border: 2px solid $columbia-blue;
+    width: 100%;
+    height: 60px;
+    &:hover {
+        background-color: $columbia-blue;
+        color: $charcoal;
+        cursor: pointer;
+    }
+    h3 {
+        font-family: Hind, sans-serif;
+        font-weight: 300;
+        font-size: 1.25em;
+        padding-top: 3px;
+        text-transform: uppercase;
+    }
+}
+
+#browsebutton {
+    margin-bottom: 9px;
+}
+
+.actionbutton-small {
+    text-align: center;
+    color: $zircon;
+    border: 1.85px solid $zircon;
+    width: 85%;
+    height: 45px;
+    &:hover {
+        background-color: $zircon;
+        color: $sirocco;
+        cursor: pointer;
+    }
+    h4 {
+        font-family: Hind, sans-serif;
+        font-weight: 300;
+        font-size: 1.15em;
+        padding-top: 5px;
+        text-transform: uppercase;
+    }
+}
+
+#randombutton {
+    margin-bottom: 7px;
+}
+
+#loginbutton {
+    margin-top: -2px;
+    margin-bottom: 7px;
+}

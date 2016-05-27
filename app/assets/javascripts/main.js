@@ -12,5 +12,13 @@ $(function() {
 	    });
 	});
 	
-	$('.about, .categories-big, .actionbutton-small').hide();
+	$('.about, .categories-big, .browsebuttons-big').hide();
+	
+	$('#mainlogo').click(function() {
+	    $('.about').slideToggle('slow');
+	});
+	
+	$('#browsebutton').click(function() {
+	    $('.browsebuttons-big').slideToggle('slow');
+	});
 });
