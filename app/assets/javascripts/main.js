@@ -12,7 +12,12 @@ var ready = function() {
 	$('#categoriesbutton').click(function() {
 	    $('.categories-big').slideToggle('slow');
 	});
+	
 };
 
 $(document).ready(ready);
 $(document).on('page:load', ready);
+
+$('#signupbutton-2').click(function() {
+	$('form').submit();
+});

@@ -247,6 +247,7 @@ aside {
 .actionbutton-small {
     text-align: center;
     color: $zircon;
+    font-family: Hind, sans-serif;
     border: 1.85px solid $zircon;
     width: 95%;
     height: 45px;
@@ -256,7 +257,6 @@ aside {
         cursor: pointer;
     }
     h4 {
-        font-family: Hind, sans-serif;
         font-weight: 300;
         font-size: 1.15em;
         padding-top: 5px;
@@ -308,12 +308,47 @@ aside {
 
 /* FORMS */
 
+.page-form {
+    margin-top: -45px;
+}
+
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
 }
 
 input {
   height: auto !important;
+  margin-bottom: 5px;
+}
+
+label {
+  font-family: Hind, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $alice-blue;
+  opacity: .85;
+  margin-bottom: -2px;
+}
+
+#signupbutton-2 {
+  margin-top: 7px;
+}
+
+#error_explanation {
+  font-family: Hind, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
 }
