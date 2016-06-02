@@ -227,6 +227,13 @@ aside {
         padding-top: 3px;
         text-transform: uppercase;
     }
+    a {
+        color: $columbia-blue;
+        &:hover {
+            color: $charcoal;
+            text-decoration: none;
+        }
+    }
 }
 
 #browsebutton {
